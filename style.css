@@ -1,16 +1,122 @@
+/* Mengatur gaya dasar untuk seluruh halaman */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
+
+/* Mengatur gaya tautan */
 a {
-    color: #0000ff;
-    text-decoration: underline;
-}
-a:hover {
-    color: #ffffff;
-    background-color: #8AC452;
+    color: #007BFF;
     text-decoration: none;
 }
-input, textarea, select, option {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+a:hover {
+    color: #0056b3;
+    background-color: #d3d3d3;
+    text-decoration: none;
+}
+
+/* Mengatur gaya header */
+h2 {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Mengatur gaya navbar */
+nav {
+    background-color: #007BFF;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Mengatur gaya konten berita */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.container h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.news-item h4 {
+    color: #007BFF;
+    margin: 0;
+    font-size: 20px;
+}
+
+.news-item small {
+    color: #888;
+}
+
+.news-item p {
+    margin: 10px 0;
+}
+
+/* Mengatur gaya form input */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
